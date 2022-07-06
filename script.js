@@ -7,7 +7,7 @@ const trueBtn = document.getElementById("True");
 const falseBtn = document.getElementById("False");
 const userScore = document.getElementById("user-score");
 const totalScore = document.getElementById("total-score");
-const questionText = document.getElementById("question-text"
+const questionText = document.getElementById("question-text");
 
 let currentQuestion = 0;
 let score = 0;
