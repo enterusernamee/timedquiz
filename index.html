@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href= "./styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Timed Coding Quiz</title>
+  <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <h1>Coding Quiz</h1>
-    <div id="startBox">
-        <h3>This is a timed coding quiz</h3>
-        <button id="startButton">Start</button>
+  <h1>TIMED CODING QUIZ</h1>
+  <span class ="timer" id = "timer">Time: 90</span>
+<div id= "score"></div>
+
+  <nav>  
+    <div>View Highscores</div>
+  </nav>
+
+  <main class="questions" id = "questions">
+    <div>
+      <h2>Coding Quiz Challenge</h2>
+      <p1>
+        Welcome to our coding quiz. The timer has been set to 90 seconds. Thank you and good luck!
+      </p1>
+
+      <div id="buttons"></div>
+      <div id="choices">choices</div>
+      <div id="results">results></div>
+      <button id="startBtn">Start Quiz</button>
     </div>
-    <div id="questionBox" style="display: none;">
-        <p id="question-name">this is a question</p>
-        
-        </div>
-    <div id="choices"></div>
-        <div id="end" class="hide">
-<p>This is the end of the quiz. Thank you!</p>
-        </div>
-    </div>
-    <script src= "./js/script.js"></script>
-    <script src= "./js/questions.js"></script> 
+  </main>
+  <script src="./js/script.js"></script>
 </body>
 </html>
