@@ -1,3 +1,4 @@
+//declare the UI elements
 var ul = document.getElementById('ul')
 var nextButton = document.getElementById('btnNext');
 var quizbox = document.getElementById('questionBox')
@@ -22,6 +23,8 @@ var app={
             }            
         ],
         index:0,
+
+        
         load:function(){
             if(this.index<=this.questions.length-1){
                 quizbox.innerHTML=this.index+1 + ". " +this.questions[this.index].q;
