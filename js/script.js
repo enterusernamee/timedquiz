@@ -80,34 +80,15 @@ function next(){
     app.allowClick();
 }
 
-var questions = [
-    {
-        title: "Arrays in JS can be used:",
-        choices: ["numbers and strings", "other arrays", "boolean", "all of the above"],
-        answer: "all of the above"
-    },
+window.load=app.load();
 
-    {
-        title: "Commonly used data types do NOT include:",
-        choices: ["strings", "boolean", "alert", "number"],
-        answer: "boolean"
-    },
+function button(ele){
+    app.check(ele);
+    app.preventClick();
+}
 
-    {
-        title: "String values must be closed within ____ when being assigned to variables",
-        choices: ["comma", "curly bracket", "quotes", "parenthesis"],
-        answer: "curly bracket"
-    },
+function next(){
+    app.next();
+    app.allowClick();
+}
 
-    {
-        title: "Condition in an if/else statement is closed with:",
-        choices: ["quotes", "curly brackets", "parenthesis", "square bracket"],
-        answer: "parenthesis"
-    },
-
-    {
-        title: "A useful tool during development and debugging for printing content:",
-        choices: ["Javascript", "terminal/bash", "for loops", "console.log"],
-        answer: "for loops"
-    }
-];
