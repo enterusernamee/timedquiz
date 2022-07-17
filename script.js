@@ -39,7 +39,7 @@ var app={
     ],
         index:0,
 
-        
+        //load a question using the index
         load:function(){
             if(this.index<=this.questions.length-1){
                 quizbox.innerHTML=this.index+1 + ". " +this.questions[this.index].q;
@@ -49,6 +49,7 @@ var app={
                 opt4.innerHTML=this.questions[this.index].options[3];
             }
             else {
+                //show the end screen
                 quizbox.innerHTML="Quiz Completed!";
                 ul.style.display="none";
                 nextButton.style.display="none";
@@ -58,6 +59,7 @@ var app={
             this.index++;
             this.load();
         },
+        //check if answer is correct or not
         check: function(ele){
             var id=ele.id.split('');
             if(id[id.length-1]==this.questions[this.index].answer){
@@ -69,6 +71,7 @@ var app={
                 ele.className="wrong";
             }
         },
+        //disable options once user selects an option
         preventClick:function(){
             for(let i=0; i<ul.children.length; i++){
                 ul.children[i].style.pointerEvents="none";
@@ -82,7 +85,7 @@ var app={
         },
         score:0,
         scoreCard:function(){
-            scoreCard.innerHTML=this.questions.length + "/" + this.score;
+            scoreCard.innerHTML=this.score + "/" + this.questions.length;
         }
 }
 
@@ -109,4 +112,3 @@ function next(){
     app.next();
     app.allowClick();
 }
-
