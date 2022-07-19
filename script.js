@@ -114,4 +114,3 @@ function next(){
     app.next();
     app.allowClick();
 }
-
